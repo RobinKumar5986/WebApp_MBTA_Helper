@@ -62,4 +62,4 @@ def find_stop_near(place_name):
 #Testing
 # url = "https://maps.googleapis.com/maps/api/geocode/json?address=Prudential%20Tower"
 # get_json(url)
-print(get_nearest_station('42.3471477', '-71.0825077')) 
+print(get_nearest_station('42.3471477', '-71.0825077'))
