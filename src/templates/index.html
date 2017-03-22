@@ -5,6 +5,28 @@
     <title>Amazing app to help you find nearest MBTA station</title>
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <h1 align="center"> Find nearest station</h1>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <form method="post" action="/">
+         <p style="height:300px" align="center">
+           <br /><br /><br /><br />
+           Insert location <input name="location" type="text"/> <br /><br /><br /><br />
+          <button type="submit">Find nearest station</button>
+         </p>
+      </form>
+      {% if place and distance %}
+      <center><p>The nearest MBTA station, {{ place }} is {{ distance }} miles from here</p>
+      {% elif error == True %}
+      <p>No place was found. Please try again</p>
+      {% endif %}</center>
+    </div>
+  </div>
 
 </body>
 </html>
