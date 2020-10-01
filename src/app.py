@@ -1,6 +1,8 @@
 """
 Simple "Hello, World" application using Flask
 """
+#please install flask before runing the program
+#no such module name mbta_helper people have to create one
 
 from flask import *
 from mbta_helper import find_stop_near
